@@ -4,3 +4,137 @@
     --gris2: #eaeaeb;
     --gris3: #777777;
 }
+
+/**Generales**/
+h1,h2,h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+h2 {
+    font-size: 3rem;
+}
+.titulo {
+    font-weight: 700!important;
+}
+.btn-success{
+    background-color: var(--verde)!important;
+}
+
+/**Header**/
+.header{
+    background-image: url(../img/hero.jpg);
+    min-height: 30rem;
+    background-size: cover;
+}
+.header .nav-link,
+.header .nav-link:hover{
+    color: #ffffff;
+}
+.header .btn-outline-light:hover{
+    color: #000000!important;
+}
+.buscador{
+    min-height: 25rem;
+}
+
+/**Categorias**/
+.categoria {
+    padding-bottom: 100px;
+    overflow: hidden;
+    height: 300px;
+}
+.categoria h3::before{
+    content: '';
+    display: block;
+    margin: 0 auto 20px auto;
+    height: 1px;
+    width: 60px;
+    background-color: var(--verde);
+}
+.categoria:hover h3::before{
+    width: 180px;
+}
+.categoria h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+.categoria p{
+    color: #999999;
+    opacity: 0;
+    padding-top: 30px;
+    transition: all .3s ease;
+}
+.categoria:hover p{
+    opacity: 1;
+    padding-top: 10px;
+}
+
+/**Pro**/
+.bg-dark{
+    background-color: var(--gris1)!important;
+}
+.nuevo-pro .row{
+    min-height: 25rem;
+}
+
+/**Primeros Pasos**/
+.primeros-pasos .descripcion{
+    flex: 1 0 50%;
+}
+@media (min-width: 768px) {
+    .primeros-pasos .descripcion{
+        display: inline-flex;
+        flex: 1 0 20% ;
+    }
+}
+.primeros-pasos .logotipo{
+    background-image: url(../img/servicio1.png);
+}
+.primeros-pasos .social-media{
+    background-image: url(../img/servicio2.png);
+}
+.primeros-pasos .audio{
+    background-image: url(../img/servicio3.png);
+}
+.primeros-pasos .traducciones{
+    background-image: url(../img/servicio4.png);
+}
+.primeros-pasos .wordpress{
+    background-image: url(../img/servicio5.png);
+}
+.primeros-pasos .descripcion{
+    height: 20rem;
+    background-size: cover;
+}
+
+/**Beneficios**/
+.beneficios .row{
+    min-height: 20rem;
+}
+.beneficio h3{
+    font-weight: 300;
+}
+.beneficio h3 span{
+    font-weight: 700;
+}
+
+/**Testimoniales**/
+.testimoniales{
+    background-color: var(--gris2);
+}
+.testimoniales .carousel{
+    background-color: #ffffff;
+}
+.testimoniales .carousel-item h4{
+    font-weight: 700;
+
+}
+.testimoniales .carousel-item blockquote{
+    font-size: 1.8rem;
+    color: var(--gris3);
+    font-style: italic;
+}
+.testimoniales .carousel-item p{
+    font-size: .8rem;
+}
