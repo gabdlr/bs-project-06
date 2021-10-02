@@ -20,6 +20,30 @@ h2 {
     background-color: var(--verde)!important;
 }
 
+/**Header-scroll**/
+.header-scroll{
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #ffffff;
+    z-index: 100;
+    margin-top: -300px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    transition: all .5s ease;
+}
+.header-scroll.activo{
+    margin-top: 0;
+    opacity: 1;
+}
+.header-scroll .nav-link{
+    color: var(--gris1);
+}
+.header-scroll .btn-outline-success{
+    color: var(--verde);
+}
+.header-scroll .btn-outline-success:hover{
+    color: #ffffff!important;
+}
 /**Header**/
 .header{
     background-image: url(../img/hero.jpg);
@@ -137,4 +161,45 @@ h2 {
 }
 .testimoniales .carousel-item p{
     font-size: .8rem;
+}
+
+/**Guías**/
+.guias .card-title{
+    font-size: 1.2rem;
+}
+.card-body {
+   height: 120px;
+} 
+
+/**Footer**/
+.footer {
+    border-top: 1px solid var(--gris2);
+}
+.footer h3{
+    color: var(--gris1);
+    font-size: 1.2rem;
+}
+.footer .nav-link{
+    color: var(--gris1)!important;
+    padding: .5rem 0;
+    font-size: 1rem;
+}
+.footer .container-fluid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer .widget{
+    flex: 0 0 calc(50%-1rem);
+    padding: 1rem;
+}
+@media (min-width: 768px) {
+    .footer .widget{
+        flex: 0 0 calc(33.3%-1rem);
+    }
+}
+@media (min-width: 992px) {
+    .footer .widget{
+        flex: 0 0 calc(20%-1rem);
+    }
 }
